@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annabel Kokeyo - NASI Education Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+  
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .profile-img {
+            border: 5px solid #f8f9fa;
+            padding: 5px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            margin-top: auto;
+            background-color: #212529;
+            padding: 20px 0;
+        }
+        .footer-links a {
+            color: #ffffff;
+            margin-right: 15px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer-links a:hover {
+            color: #ff6b6b;
+            text-decoration: underline;
+        }
+        .social-icons a {
+    margin: 0 12px;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.bi-instagram {
+    color: #E4405F; /* Instagram pink/red */
+}
+.bi-linkedin {
+    color: #0077b5; /* LinkedIn blue */
+}
+.bi-tiktok {
+    color: #000000; /* TikTok black */
+}
+.bi-whatsapp {
+    color: #25D366; /* WhatsApp green */
+}
+.bi-youtube {
+    color: #FF0000; /* YouTube red */
+}
+.bi-facebook {
+    color: #1877F2; /* Facebook blue */
+}
+.bi-twitter {
+    color: #1DA1F2; /* Twitter blue */
+}
+.bi-x {
+    color: #1D9BF0; /* X/Twitter blue */
+}
+
+        
+       
+        .magazine-section {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            margin-bottom: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .magazine-header {
+            background-color: #ff6b6b;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .magazine-content {
+            padding: 20px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .magazine-content p {
+            margin-bottom: 15px;
+        }
+        .highlight-text {
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        .section-icon {
+            width: 35px;
+            margin-right: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .profile-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-header h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        .profile-header p {
+            font-size: 1.2em;
+            color: #777;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .social-icons a {
+            margin: 0 12px;
+            font-size: 26px;
+            color: inherit;  /* Ensure original icon color is inherited */
+        }
+
+        .bi-instagram,
+        .bi-linkedin,
+        .bi-tiktok,
+        .bi-whatsapp,
+        .bi-youtube,
+        .bi-facebook,
+        .bi-twitter,
+        .bi-x {
+            color: inherit;  /* Remove custom color to keep default icon color */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">NASI Education Services</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="appointment.html">Book Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+    <!-- Profile Header -->
+    <section class="container profile-header">
+        <img src="images/annabel.jpg" alt="Annabel Kokeyo" class="profile-img" width="220">
+        <h1>Annabel Kokeyo</h1>
+        <p>Professional Mental Health Counselor at NASI Education Services</p>
+    </section>
+
+    <!-- Magazine Style Profile Sections -->
+    <section class="container">
+
+        <!-- Professional Background -->
+        <div class="magazine-section">
+            <div class="magazine-header">
+                <h2>Professional Background</h2>
+            </div>
+            <div class="magazine-content">
+                <p><img src="https://img.icons8.com/ios-filled/50/000000/briefcase.png" class="section-icon" alt="Professional Icon"> Annabel Kokeyo is a dedicated mental health professional and the founder of NASI Education Services, a mental health care organization based in Kisumu, Kenya. She established NASI in 2024 to provide personalized counseling, therapy, and support programs for adolescents, youths, and their caregivers. Her work focuses on mental health advocacy and education.</p>
+                <p>With a background in psychology, she leads NASI Education Services, ensuring individuals receive holistic mental health care. Her experience extends to working as a psychologist at Sunburst Projects Kenya since August 2023, where she provides counseling and therapy to vulnerable populations.</p>
+            </div>
+        </div>
+
+        <!-- Academic Qualifications -->
+        <div class="magazine-section">
+            <div class="magazine-header">
+                <h2>Academic Qualifications</h2>
+            </div>
+            <div class="magazine-content">
+                <p><img src="https://img.icons8.com/ios-filled/50/000000/education.png" class="section-icon" alt="Education Icon"> Annabel is currently pursuing a Bachelor of Arts in Counseling Psychology at Great Lakes University. Her previous education includes a Diploma in Community Health and HIV Management at Thika School of Medical and Health Sciences. She is also certified by the Kenya Association of Professional Counselors and has completed training in Social and Behavioral Research.</p>
+            </div>
+        </div>
+
+        <!-- Specializations and Approach -->
+        <div class="magazine-section">
+            <div class="magazine-header">
+                <h2>Specializations and Approach</h2>
+            </div>
+            <div class="magazine-content">
+                <p><img src="https://img.icons8.com/ios-filled/50/000000/psychologist.png" class="section-icon" alt="Psychologist Icon"> Annabel specializes in adolescent therapy, mental health awareness, psychosocial support, and education. Her approach is centered around providing safe spaces for individuals to explore emotional and psychological challenges. She offers counseling through one-on-one sessions, group therapy, and workshops.</p>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="magazine-section">
+            <div class="magazine-header">
+                <h2>Services Offered by NASI Education Services</h2>
+            </div>
+            <div class="magazine-content">
+                <p><img src="https://img.icons8.com/ios-filled/50/000000/hand-holding-heart.png" class="section-icon" alt="Services Icon"> Under Annabel’s leadership, NASI Education Services provides services such as individual and family counseling, online therapy, substance abuse therapy, identity exploration, and skill-building workshops. The organization uses platforms like Instagram, LinkedIn, and YouTube to raise awareness about mental health and provide educational content.</p>
+            </div>
+        </div>
+
+    </section>
+  </main>
+    <!-- Footer -->
+<footer class="bg-dark text-light text-center py-3 mt-5">
+  <div class="container">
+      <p>&copy; 2025 NASI Education Services. All Rights Reserved.</p>
+      <div class="footer-links">
+          <a href="#">Our Team</a>
+          <a href="#">Resources</a>
+          <a href="faq.html">FAQ</a>
+          <a href="services.html">Counseling Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="location.html">Location</a>
+          <a href="contact.html">Contact</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/nasi.services?igsh=MTVkM3pkOGpsZDl4NQ==" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/nasi-nurturing-adolescents-youth-and-caregivers-to-safeguard-integrity/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@nasi.education.services?_t=8qGLQYsKXfK&_r=1" target="_blank"><img src="images/tiktok logo.png" alt="tiktok Logo" width="30" height="30"></a>
+                <a href="https://whatsapp.com/channel/0029VacNWnY4inooA4VRII3x" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://youtube.com/@nasieducationservices?si=C1yjZJMiJue9ptoW" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.facebook.com/share/15ca8XK7FT/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://x.com/nasi_education" target="_blank">
+            <img src="images/X logo.png" alt="X Logo" width="30" height="30">
+        </a>
+    </div>
+  </div>
+  <!-- Bottom Footer Section -->
+<div class="container-fluid bg-dark text-light py-2">
+    <div class="row">
+        <div class="col-md-6 text-start">
+            <a href="terms&conditions.html" class="text-blue">Terms & Conditions</a>
+        </div>
+        <div class="col-md-6 text-end">
+            <span>Address:<a href="location.html" class="text-blue">Kisumu, Kenya </a></span> <br>
+            <span>Email: <a href="mailto:nasikisumu@gmail.com" class="text-blue">nasikisumu@gmail.com</a></span><br>
+            <span>Phone: <a href="tel:+254 737 571 758 | +254 115 617721" class="text-blue">+254 737 571 758 | +254 115 617721</a></span><br>
+        </div>
+    </div>
+</div>
+
+<style>
+    .text-blue {
+        color: #007bff; /* Blue color */
+        text-decoration: none;
+    }
+
+    .text-blue:hover {
+        color: #0056b3; /* Darker blue on hover */
+    }
+</style>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - NASI Education Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(239, 239, 239);
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero {
+            background: url('https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+            color: white;
+            padding: 150px 0 100px 0; /* Adjusted padding to give space for the logo */
+            text-align: center;
+            position: relative; /* Ensure the logo is positioned relative to this section */
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .btn-primary {
+            background: #ff6b6b;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #e63946;
+        }
+        .social-icons a {
+            margin: 0 12px;
+            font-size: 26px;
+        }
+        .testimonial-card {
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background: #f9f9f9;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .testimonial-card-1 {
+            background-color: #e3f2fd;
+        }
+        .testimonial-card-2 {
+            background-color: #fff3e0;
+        }
+        .testimonial-card-3 {
+            background-color: #e8f5e9;
+        }
+
+        .footer {
+    margin-top: 10px; /* Adjust this value to decrease the space */
+}
+
+        .footer-links a {
+            color: #ffffff;
+            margin-right: 15px;
+            text-decoration: none;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        .footer-links a:hover {
+            color: #ff6b6b;
+            text-decoration: underline;
+        }
+        .bi-instagram {
+            color: #E4405F;
+        }
+        .bi-linkedin {
+            color: #0077b5;
+        }
+        .bi-tiktok {
+            color: #000000;
+        }
+        .bi-whatsapp {
+            color: #25D366;
+        }
+        .bi-youtube {
+            color: #FF0000;
+        }
+        .bi-facebook {
+            color: #1877F2;
+        }
+        .bi-twitter {
+            color: #1DA1F2; /* Original Twitter color */
+        }
+        .bi-x {
+            color: #1D9BF0; /* X account color */
+        }
+        /* Logo Style */
+        .logo {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            border-radius: 50%;
+            width: 100px; /* Adjust size as needed */
+            height: 100px;
+            object-fit: cover;
+            z-index: 10; /* Ensure logo appears above other content */
+        }
+        /* Service Cards */
+.service-card {
+    border: 1px solid #ddd;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #007bff;
+}
+
+.service-card h4 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive Layout */
+@media (max-width: 767px) {
+    .service-card {
+        margin-bottom: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="services.html">NASI Education Services</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="appointment.html">Book Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section --> 
+<section class="hero d-flex align-items-center" style="padding: 40px 0;">
+    <img src="images/logo.jpg" alt="NASI Education Services Logo" class="logo" style="width: 85px; height: 85px; margin-top: 30px;"> <!-- Round logo placed on left -->
+    <div class="container text-center">
+        <div class="hero-overlay">
+            <h1 style="font-size: 2.5rem;">Our Services</h1>
+            <p style="font-size: 1rem;">Explore the mental health support and counseling services we provide for individuals, families, and youth.</p>
+            <a href="contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+
+    <section class="services-section py-5">
+        <div class="container">    
+            <div class="row g-4">
+                <!-- Service Cards -->
+                <div class="col-md-4">
+                    <div class="service-card text-center rounded shadow-sm text-white p-4" 
+                         style="background: url('https://images.pexels.com/photos/5711127/pexels-photo-5711127.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;">
+                        <i class="bi bi-person-circle service-icon mb-3"></i>
+                        <h4>Individual Counseling</h4>
+                        <p style="color: white !important;">One-on-one therapy sessions for personalized mental health support.</p>
+                        <a href="appointment.html" class="btn btn-primary">Book a Session</a>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="service-card text-center rounded shadow-sm text-white p-4" 
+                         style="background: url('https://images.pexels.com/photos/5710976/pexels-photo-5710976.jpeg?auto=compress&cs=tinysrgb&w=400') center/cover no-repeat;">
+                        <i class="bi bi-people-fill service-icon mb-3"></i>
+                        <h4>Group Therapy</h4>
+                        <p style="color: white !important;">Guided discussions and support groups for people with shared experiences.</p>
+                        <a href="appointment.html" class="btn btn-primary">Book a Session</a>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="service-card text-center rounded shadow-sm text-white p-4" 
+                         style="background: url('https://images.pexels.com/photos/5336939/pexels-photo-5336939.jpeg?auto=compress&cs=tinysrgb&w=400') center/cover no-repeat;">
+                        <i class="bi bi-house-door service-icon mb-3"></i>
+                        <h4>Family Counseling</h4>
+                        <p style="color: white !important;">Helping families improve communication and resolve conflicts.</p>
+                        <a href="appointment.html" class="btn btn-primary">Book a Session</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="service-card text-center rounded shadow-sm text-white p-4" 
+                         style="background: url('https://images.pexels.com/photos/4144923/pexels-photo-4144923.jpeg?auto=compress&cs=tinysrgb&w=400') center/cover no-repeat;">
+                        <i class="bi bi-phone service-icon mb-3"></i>
+                        <h4>Online Counseling</h4>
+                        <p style="color: white !important;">Virtual therapy sessions for convenience and accessibility.</p>
+                        <a href="appointment.html" class="btn btn-primary">Book a Session</a>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="service-card text-center rounded shadow-sm text-white p-4" 
+                         style="background: url('https://images.pexels.com/photos/7230385/pexels-photo-7230385.jpeg?auto=compress&cs=tinysrgb&w=400') center/cover no-repeat;">
+                        <i class="bi bi-droplet service-icon mb-3"></i>
+                        <h4>Substance Abuse Therapy</h4>
+                        <p style="color: white !important;">Counseling for individuals struggling with addiction.</p>
+                        <a href="appointment.html" class="btn btn-primary">Book a Session</a>
+                    </div>
+                </div>
+    
+                <div class="col-md-4">
+                    <div class="service-card text-center rounded shadow-sm text-white p-4" 
+                         style="background: url('https://images.pexels.com/photos/3958424/pexels-photo-3958424.jpeg?auto=compress&cs=tinysrgb&w=400') center/cover no-repeat;">
+                        <i class="bi bi-emoji-heart-eyes service-icon mb-3"></i>
+                        <h4>Crisis Intervention & Trauma Therapy</h4>
+                        <p style="color: white !important;">Immediate support for those experiencing emotional distress.</p>
+                        <a href="appointment.html" class="btn btn-primary">Book a Session</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row g-4 mt-4">
+                <!-- Service Card 7 -->
+                <div class="col-md-4">
+                    <div class="service-card p-4 text-center rounded shadow-sm" 
+                         style="background-image: url('https://images.pexels.com/photos/3693920/pexels-photo-3693920.jpeg?auto=compress&cs=tinysrgb&w=400');">
+                        <i class="bi bi-gender-ambiguous service-icon mb-3"></i>
+                        <h4>Identity Exploration & LGBTQ Therapy</h4>
+                        <p style="color: white !important;">Safe space for self-discovery and gender/sexuality-related counseling.</p>
+                        <a href="appointment.html" class="btn btn-primary">Book a Session</a>
+                    </div>
+                </div>
+    
+                <!-- Service Card 8 -->
+                <div class="col-md-4">
+                    <div class="service-card p-4 text-center rounded shadow-sm" 
+                         style="background-image: url('https://images.pexels.com/photos/5306437/pexels-photo-5306437.jpeg?auto=compress&cs=tinysrgb&w=400')">
+                        <i class="bi bi-person-check service-icon mb-3"></i>
+                        <h4>Holistic Student Support Program</h4>
+                        <p style="color: white !important;">Mental health support tailored for students' academic and personal well-being.</p>
+                        <a href="appointment.html" class="btn btn-primary">Book a Session</a>
+                    </div>
+                </div>
+    
+                <!-- Service Card 9 -->
+                <div class="col-md-4">
+                    <div class="service-card p-4 text-center rounded shadow-sm" 
+                         style="background-image: url('https://media.istockphoto.com/id/2175850124/photo/multi-ethnic-group-of-students-engaged-in-stem-coding-lecture-with-instructor-presenting.jpg?b=1&s=612x612&w=0&k=20&c=3j5CYkzNRFrAWlLB8vrpeJl0iJMkgs6tHlYaErF0QFg=');">
+                        <i class="bi bi-gear service-icon mb-3"></i>
+                        <h4>Skill-Building Workshops</h4>
+                        <p style="color: white !important;">Programs to help individuals develop coping mechanisms and life skills.</p>
+                        <a href="appointment.html" class="btn btn-primary">Book a Session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Send Us a Message Section -->
+<section class="text-center py-3">
+    <h2>Have any Questions?</h2>
+    <p>Feel free to reach out to us if you have any questions or need assistance.</p>
+    <a href="contact.html" class="btn btn-primary btn-lg">Send Us a Message</a>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <div class="container">
+            <p>&copy; 2025 NASI Education Services. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Our Team</a>
+                <a href="#">Resources</a>
+                <a href="faq.html">FAQ</a>
+                <a href="services.html">Counseling Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="location.html">Location</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/nasi.services?igsh=MTVkM3pkOGpsZDl4NQ==" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/nasi-nurturing-adolescents-youth-and-caregivers-to-safeguard-integrity/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@nasi.education.services?_t=8qGLQYsKXfK&_r=1" target="_blank"><img src="images/tiktok logo.png" alt="tiktok Logo" width="30" height="30"></a>
+                <a href="https://whatsapp.com/channel/0029VacNWnY4inooA4VRII3x" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://youtube.com/@nasieducationservices?si=C1yjZJMiJue9ptoW" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.facebook.com/share/15ca8XK7FT/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://x.com/nasi_education" target="_blank">
+                    <img src="images/X logo.png" alt="X Logo" width="30" height="30">
+                </a>
+            </div>
+        </div>
+        <!-- Bottom Footer Section -->
+<div class="container-fluid bg-dark text-light py-2">
+    <div class="row">
+        <div class="col-md-6 text-start">
+            <a href="terms&conditions.html" class="text-blue">Terms & Conditions</a>
+        </div>
+        <div class="col-md-6 text-end">
+            <span>Address:<a href="location.html" class="text-blue">Kisumu, Kenya </a></span> <br>
+            <span>Email: <a href="mailto:nasikisumu@gmail.com" class="text-blue">nasikisumu@gmail.com</a></span><br>
+            <span>Phone: <a href="tel:+254 737 571 758 | +254 115 617721" class="text-blue">+254 737 571 758 | +254 115 617721</a></span><br>
+        </div>
+    </div>
+</div>
+
+<style>
+    .text-blue {
+        color: #007bff; /* Blue color */
+        text-decoration: none;
+    }
+
+    .text-blue:hover {
+        color: #0056b3; /* Darker blue on hover */
+    }
+</style>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

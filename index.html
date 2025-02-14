@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASI Education Services - Mental Health Support</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero {
+            background: url('https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+            color: white;
+            padding: 100px 0 80px 0; /* Adjusted padding to give space for the logo */
+            text-align: center;
+            position: relative; /* Ensure the logo is positioned relative to this section */
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .btn-primary {
+            background: #ff6b6b;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #e63946;
+        }
+        .social-icons a {
+            margin: 0 12px;
+            font-size: 26px;
+        }
+        .testimonial-card {
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background: #f9f9f9;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .testimonial-card-1 {
+            background-color: #e3f2fd;
+        }
+        .testimonial-card-2 {
+            background-color: #fff3e0;
+        }
+        .testimonial-card-3 {
+            background-color: #e8f5e9;
+        }
+        .footer-links a {
+            color: #ffffff;
+            margin-right: 15px;
+            text-decoration: none;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        .footer-links a:hover {
+            color: #ff6b6b;
+            text-decoration: underline;
+        }
+        .bi-instagram {
+            color: #E4405F;
+        }
+        .bi-linkedin {
+            color: #0077b5;
+        }
+        .bi-tiktok {
+            color: #000000;
+        }
+        .bi-whatsapp {
+            color: #25D366;
+        }
+        .bi-youtube {
+            color: #FF0000;
+        }
+        .bi-facebook {
+            color: #1877F2;
+        }
+        .bi-twitter {
+            color: #1DA1F2; /* Original Twitter color */
+        }
+        .bi-x {
+            color: #1D9BF0; /* X account color */
+        }
+        /* Logo Style */
+        .logo {
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            border-radius: 50%;
+            width: 100px; /* Adjust size as needed */
+            height: 100px;
+            object-fit: cover;
+            z-index: 10; /* Ensure logo appears above other content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">NASI Education Services</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="appointment.html">Book Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+   <!-- Hero Section -->
+   <section class="hero d-flex align-items-center">
+    <img src="images/logo.jpg" alt="NASI Education Services Logo" class="logo"> <!-- Round logo placed on left -->
+    <div class="container text-center">
+        <div class="hero-overlay">
+            <h1>Welcome to NASI Education Services</h1>
+            <p>Empowering youth, caregivers, and individuals with mental health support and counseling.</p>
+            <a href="services.html" class="btn btn-primary btn-lg">Our Services</a>
+            <a href="about.html" class="btn btn-light btn-lg ms-3">Learn More</a>
+        </div>
+    </div>
+</section>
+    
+<!-- Testimonials Section -->
+<section class="bg-light py-5 text-center">
+    <div class="container">
+        <h2 class="mb-4">What People Say</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card testimonial-card color-1">
+                    <div class="card-body">
+                        <strong>A New Beginning</strong><br>
+                        <p>"I was at my lowest when I reached out, feeling overwhelmed and lost. The support and guidance I received helped me find clarity and rebuild my confidence. I can’t thank you enough for being a light during my darkest moments."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card testimonial-card color-2">
+                    <div class="card-body">
+                        <strong>From Struggles to Success</strong><br>
+                        <p>"Through your counseling, I was able to regain focus and work through my challenges. I’m beyond grateful to share that I surpassed my target and scored a B+ in the recently released KCSE results! Thank you for believing in me."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card testimonial-card color-3">
+                    <div class="card-body">
+                        <strong>Healing Our Marriage</strong><br>
+                        <p>"My wife and I were struggling to communicate, and it felt like we were drifting apart. Seeking counseling was the best decision we made—we now understand each other better and are rebuilding our relationship with a stronger foundation."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card testimonial-card color-1">
+                    <div class="card-body">
+                        <strong>Helping My Child Thrive</strong><br>
+                        <p>"I was worried my child had lost all interest in school. I didn’t know what to do until I found this place. The support and encouragement given have made such a difference—my child is now excited to learn again! Thank you for the incredible work you do."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card testimonial-card color-2">
+                    <div class="card-body">
+                        <strong>Overcoming Anxiety</strong><br>
+                        <p>"For years, I struggled with anxiety, feeling like I would never break free from the constant worry. Through counseling, I learned how to manage my thoughts and emotions, and now I feel more in control of my life. Forever grateful!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card testimonial-card color-3">
+                    <div class="card-body">
+                        <strong>A Safe Space to Heal</strong><br>
+                        <p>"Walking into your office was the first step toward healing, and I’m so glad I did. The warmth, patience, and understanding I received made all the difference. Thank you for providing a safe space to open up and grow."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Custom CSS for Alternating Colors -->
+<style>
+    .testimonial-card {
+        border-radius: 8px;
+        box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .testimonial-card:hover {
+        transform: translateY(-5px); /* Slight lift on hover */
+    }
+
+    .card-body {
+        padding: 20px;
+        color: #333; /* Professional dark gray text */
+    }
+
+    .card-body strong {
+        color: #0056b3; /* Subtle dark blue for headings */
+        font-size: 1.1rem;
+    }
+
+    /* Alternating Background Colors */
+    .color-2 {
+        background: #f8f9fa; /* Soft light gray */
+        border: 1px solid #e0e0e0;
+    }
+
+    .color-1 {
+        background: #e3f2fd; /* Light pastel blue */
+        border: 1px solid #b6daff;
+    }
+
+    .color-3 {
+        background: #fce4ec; /* Light pastel pink */
+        border: 1px solid #f8bbd0;
+    }
+</style>
+
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+           
+        <div class="container">
+            <p>&copy; 2025 NASI Education Services. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Our Team</a>
+                <a href="#">Resources</a>
+                <a href="faq.html">FAQ</a>
+                <a href="services.html">Counseling Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="location.html">Location</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/nasi.services?igsh=MTVkM3pkOGpsZDl4NQ==" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/nasi-nurturing-adolescents-youth-and-caregivers-to-safeguard-integrity/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@nasi.education.services?_t=8qGLQYsKXfK&_r=1" target="_blank"><img src="images/tiktok logo.png" alt="tiktok Logo" width="30" height="30"></a>
+                <a href="https://whatsapp.com/channel/0029VacNWnY4inooA4VRII3x" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://youtube.com/@nasieducationservices?si=C1yjZJMiJue9ptoW" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.facebook.com/share/15ca8XK7FT/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://x.com/nasi_education" target="_blank">
+                    <img src="images/X logo.png" alt="X Logo" width="30" height="30">
+                </a>
+            </div>
+        </div>
+
+<!-- Bottom Footer Section -->
+<div class="container-fluid bg-dark text-light py-2">
+    <div class="row">
+        <div class="col-md-6 text-start">
+            <a href="terms&conditions.html" class="text-blue">Terms & Conditions</a>
+        </div>
+        <div class="col-md-6 text-end">
+            <span>Address:<a href="location.html" class="text-blue">Kisumu, Kenya </a></span> <br>
+            <span>Email: <a href="mailto:nasikisumu@gmail.com" class="text-blue">nasikisumu@gmail.com</a></span><br>
+            <span>Phone: <a href="tel:+254 737 571 758 | +254 115 617721" class="text-blue">+254 737 571 758 | +254 115 617721</a></span><br>
+        </div>
+    </div>
+</div>
+
+<style>
+    .text-blue {
+        color: #007bff; /* Blue color */
+        text-decoration: none;
+    }
+
+    .text-blue:hover {
+        color: #0056b3; /* Darker blue on hover */
+    }
+</style>
+
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

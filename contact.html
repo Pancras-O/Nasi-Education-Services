@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment & Contact</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+      body{
+        background-color: rgb(250, 246, 246);
+      }
+       .hero {
+            background: url('https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+            color: white;
+            padding: 80px 0 50px 0; /* Adjusted padding to give space for the logo */
+            text-align: center;
+            position: relative; /* Ensure the logo is positioned relative to this section */
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .btn-primary {
+            background: #ff6b6b;
+            border: none;
+        }
+        .btn-primary:hover {
+            background: #e63946;
+        }
+        .form-section {
+            max-width: 600px;
+            margin: auto;
+        }
+            .footer-links a {
+            color: #ffffff;
+            margin-right: 15px;
+            text-decoration: none;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        .social-icons a {
+            margin: 0 12px;
+            font-size: 26px;
+        }
+        .footer-links a:hover {
+            color: #ff6b6b;
+            text-decoration: underline;
+        }
+        .bi-instagram {
+            color: #E4405F;
+        }
+        .bi-linkedin {
+            color: #0077b5;
+        }
+        .bi-tiktok {
+            color: #000000;
+        }
+        .bi-whatsapp {
+            color: #25D366;
+        }
+        .bi-youtube {
+            color: #FF0000;
+        }
+        .bi-facebook {
+            color: #1877F2;
+        }
+        .bi-twitter {
+            color: #1DA1F2; /* Original Twitter color */
+        }
+        .bi-x {
+            color: #1D9BF0; /* X account color */
+        }
+        /* Logo Style */
+        .logo {
+            position: absolute;
+            margin-top: 30px;
+            left: 30px;
+            top: 30px;
+            border-radius: 50%;
+            width: 100px; /* Adjust size as needed */
+            height: 100px;
+            object-fit: cover;
+            z-index: 10; /* Ensure logo appears above other content */
+        }
+    </style>
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="#">NASI Education Services</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" href="appointment.html">Book Appointment</a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+   <!-- Hero Section -->
+  <section class="hero d-flex align-items-center">
+    <img src="images/logo.jpg" alt="NASI Education Services Logo" class="logo"> <!-- Round logo placed on left -->
+    <div class="container text-center">
+      <div class="hero-overlay">
+          <h1>Contact Us</h1>
+          <h2>Your Mental Health Matters</h2>
+          <a href="services.html" class="btn btn-primary btn-lg">Our Services</a>
+          <a href="faq.html" class="btn btn-light btn-lg ms-3">Learn More</a>
+      </div>
+  </div>
+  </section>
+  <div class="container mt-5">
+    <!-- Tabs Navigation -->
+    <ul class="nav nav-tabs" id="formTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab">Send Us a Message</button>
+    </li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="appointment-tab" data-bs-toggle="tab" data-bs-target="#appointment" type="button" role="tab">Book Appointment</button>
+        </li>
+    </ul>
+     
+
+    <!-- Tabs Content -->
+    <div class="tab-content mt-4" id="formTabsContent">
+            <!-- Appointment Form -->
+            <div class="tab-pane fade" id="appointment" role="tabpanel">
+                <div class="form-section p-4 border rounded shadow-sm">
+                    <h3 class="text-center mb-3">Book an Appointment</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label"><strong>Full Name</strong></label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label"><strong>Email</strong></label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label"><strong>Select Service</strong></label>
+                            <select class="form-select" id="service" required>
+                                <option value="">Choose a Service</option>
+                                <option value="individual counseling">Individual Counseling</option>
+                                <option value="group therapy">Group Therapy</option>
+                                <option value="family counseling Program">Family Counseling</option>
+                                <option value="online counseling">Online Counseling</option>
+                                <option value="substance abuse therapy">Substance Abuse Therapy</option>
+                                <option value="crisis Intervention & trauma therapy">Crisis Intervention & Trauma Therapy</option>
+                                <option value="identity exploration & LGBTQ therapy">Identity Exploration & LGBTQ Therapy</option>
+                                <option value="holistic student support program">Holistic Student Support Program</option>
+                                <option value="Skill-Building Workshops">Skill-Building Workshops</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label"><strong>Preferred Date</strong></label>
+                            <input type="date" class="form-control" id="date" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="time" class="form-label"><strong>Preferred Time</strong></label>
+                          <input type="time" class="form-control" id="time" required>
+                      </div>
+                      
+                        <button type="submit" class="btn btn-primary w-100"><strong>Submit</strong></button>
+                    </form>
+                </div>
+            </div>
+    
+      <!-- Contact Form -->
+      <div class="tab-pane fade show active" id="contact" role="tabpanel">
+       <div class="form-section p-4 border rounded shadow-sm">
+               <h3 class="text-center mb-3">Send Us a Message</h3>
+               <form>
+                   <div class="mb-3">
+                       <label for="contact-name" class="form-label"><strong>Full Name</strong></label>
+                       <input type="text" class="form-control" id="contact-name" required>
+                   </div>
+                   <div class="mb-3">
+                       <label for="contact-email" class="form-label"><strong>Email</strong></label>
+                       <input type="email" class="form-control" id="contact-email" required>
+                   </div>
+                   <div class="mb-3">
+                       <label for="message" class="form-label"><strong>Message</strong></label>
+                       <textarea class="form-control" id="message" rows="4" required></textarea>
+                   </div>
+                   <button type="submit" class="btn btn-primary w-100">Send Message</button>
+               </form>
+           </div>
+       </div>
+     </div>
+     </div>
+        <!-- Footer -->
+        <footer class="bg-dark text-light text-center py-3 mt-5">
+          <div class="container">
+              <p>&copy; 2025 NASI Education Services. All Rights Reserved.</p>
+              <div class="footer-links">
+                  <a href="#">Our Team</a>
+                  <a href="#">Resources</a>
+                  <a href="faq.html">FAQ</a>
+                  <a href="services.html">Counseling Services</a>
+                  <a href="blog.html">Blog</a>
+                  <a href="location.html">Location</a>
+                  <a href="contact.html">Contact</a>
+              </div>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/nasi.services?igsh=MTVkM3pkOGpsZDl4NQ==" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/nasi-nurturing-adolescents-youth-and-caregivers-to-safeguard-integrity/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.tiktok.com/@nasi.education.services?_t=8qGLQYsKXfK&_r=1" target="_blank"><img src="images/tiktok logo.png" alt="tiktok Logo" width="30" height="30"></a>
+                <a href="https://whatsapp.com/channel/0029VacNWnY4inooA4VRII3x" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://youtube.com/@nasieducationservices?si=C1yjZJMiJue9ptoW" target="_blank"><i class="bi bi-youtube"></i></a>
+                <a href="https://www.facebook.com/share/15ca8XK7FT/" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://x.com/nasi_education" target="_blank">
+                      <img src="images/X logo.png" alt="X Logo" width="30" height="30">
+                  </a>
+              </div>
+          </div>
+          <!-- Bottom Footer Section -->
+<div class="container-fluid bg-dark text-light py-2">
+  <div class="row">
+      <div class="col-md-6 text-start">
+          <a href="terms&conditions.html" class="text-blue">Terms & Conditions</a>
+      </div>
+      <div class="col-md-6 text-end">
+          <span>Address:<a href="location.html" class="text-blue">Kisumu, Kenya </a></span> <br>
+          <span>Email: <a href="mailto:nasikisumu@gmail.com" class="text-blue">nasikisumu@gmail.com</a></span><br>
+          <span>Phone: <a href="tel:+254 737 571 758 | +254 115 617721" class="text-blue">+254 737 571 758 | +254 115 617721</a></span><br>
+      </div>
+  </div>
+</div>
+
+<style>
+  .text-blue {
+      color: #007bff; /* Blue color */
+      text-decoration: none;
+  }
+
+  .text-blue:hover {
+      color: #0056b3; /* Darker blue on hover */
+  }
+</style>
+      </footer>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
